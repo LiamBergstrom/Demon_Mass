@@ -71,11 +71,14 @@ body {
 }
 
 .navbar-logo {
-  background-image: url(images/ninja.ico);
+  background-image: url(images/devil_PNG12.png);
+  background-size: 84px;
   border-radius: 50%;
-  width: 50px;
-  height: 50px;
+  background-position-x: -10px;
+  width: 65px;
+  height: 65px;
   margin-inline-start: 0.5em;
+  margin-right: 20px;
 }
 
 #navbar-toggle {
@@ -133,4 +136,47 @@ body {
   background-color: rgba(0, 0, 0, 0.4);
   opacity: 1;
   visibility: visible;
+}
+
+#navbar-toggle[aria-expanded="true"] + #navbar-menu .navbar-links {
+  padding: 1em;
+}
+
+.navbar-links {
+  list-style: none;
+  position: absolute;
+  left: 0;
+  right: 0;
+  background-color: var(--navbar-bg-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.3);
+}
+
+@media screen and (min-width: 700px) {
+  #navbar-toggle,
+  #navbar-toggle[aria-expanded="true"] {
+    display: none;
+  }
+
+  #navbar-menu,
+  #navbar-toggle[aria-expanded="true"] + #navbar-menu {
+    visibility: visible;
+    opacity: 1;
+    position: static;
+    display: block;
+    height: 100%;
+  }
+
+  .navbar-links,
+  #navbar-toggle[aria-expanded="true"] + #navbar-menu .navbar-links {
+    margin: 0;
+    padding: 0;
+    box-shadow: none;
+    position: static;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+  }
 }
