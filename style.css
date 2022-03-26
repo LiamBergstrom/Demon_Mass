@@ -12,6 +12,8 @@
 }
 
 body {
+  overflow: hidden;
+  padding-top: 70px;
   height: 100vh;
   font-family: Arial, Helvetica, sans-serif;
   line-height: 1.6;
@@ -22,6 +24,7 @@ body {
   max-width: 1000px;
   padding: 0 1.4rem;
   margin: 0 auto;
+  height: 1000px;
 }
 
 #navbar {
@@ -29,9 +32,11 @@ body {
   position: fixed;
   height: var(--navbar-height);
   background-color: var(--navbar-bg-color);
+  top: 0;
   left: 0;
   right: 0;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+  z-index: 9999;
 }
 .navbar-container {
   display: flex;
@@ -179,4 +184,37 @@ body {
     width: 100%;
     height: 100%;
   }
+}
+
+footer {
+  position: absolute;
+  display: flex;
+  bottom: 0;
+  width: 100%;
+  height: 80px;
+  background: #6cf;
+}
+
+container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+h1 {
+  text-align: center;
+}
+
+.header1 {
+  /* Background image här */
+  margin-top: 30px;
+  height: 1000px;
+  width: 50%;
+}
+
+.header2 {
+  margin-top: 30px;
+  height: 1000px;
+  width: 50%;
 }
