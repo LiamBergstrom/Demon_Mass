@@ -12,7 +12,6 @@
 }
 
 body {
-  overflow: hidden;
   margin: 0;
   padding-top: 4rem;
   height: 100%;
@@ -20,6 +19,7 @@ body {
   line-height: 1.6;
   background-color: #bb000e;
   overflow: scroll;
+  overflow-x: hidden;
 }
 
 .container {
@@ -211,35 +211,33 @@ h1 {
   text-align: center;
 }
 
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+a {
+  margin: 0;
+}
 .headers {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
+  height: 60vh;
 }
 
-#header1 {
-  background-image: url(images/main_man1.jpg);
-  background-repeat: no-repeat;
-  background-size: 100%;
-  padding-top: 30px;
-  height: 40rem;
+#main_images {
+  width: 49vw;
+  /* Ska vara 50vw */
+  height: 60vh;
   margin: 0;
-  background-size: contain, cover;
-  width: 50%;
 }
 
-.header2 {
-  background-image: url(images/seamless-gym-wear.jpg);
-  background-repeat: no-repeat;
-  background-size: 100%;
+section {
   margin: 0;
-  padding-top: 30px;
-  height: 40rem;
-  background-size: contain;
-  width: 50%;
+  height: 20rem;
+  width: 100%;
+  overflow: hidden;
 }
-
-/* section{
-
-} */
 
 /* background-size: 100% 70vh; (Mobile) */
