@@ -13,8 +13,8 @@ var responsiveSlider = function () {
   var sliderWidth = slider.offsetWidth;
   var slideList = document.getElementById("slideWrap");
   var count = 1;
-  var items = slideList.querySelectorAll("li").length;
-  // Summera listans widths som total slidewidth.
+  var items = 2;
+  // var items = slideList.querySelectorAll("li").length;
 
   var prev = document.getElementById("prev");
   var next = document.getElementById("next");
@@ -43,6 +43,7 @@ var responsiveSlider = function () {
       slideList.style.left = "0px";
       count = 1;
     }
+    console.log(sliderWidth);
   };
 
   next.addEventListener("click", function () {

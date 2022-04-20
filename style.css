@@ -188,6 +188,10 @@ body {
     height: 100%;
   }
 }
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
 
 footer {
   position: absolute;
@@ -276,7 +280,7 @@ section {
   float: left;
 }
 #slider ul li img {
-  width: 500px;
+  width: 600px;
   height: 265px;
 }
 
@@ -306,4 +310,13 @@ section {
 #slider #next {
   right: 10px;
 }
+
+.items {
+  transition: all 2s ease;
+}
+
+.items:hover {
+  transform: scale(1.2);
+}
+
 /* background-size: 100% 70vh; (Mobile) */
