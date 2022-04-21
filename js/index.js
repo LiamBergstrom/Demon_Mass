@@ -62,3 +62,12 @@ var responsiveSlider = function () {
 window.onload = function () {
   responsiveSlider();
 };
+
+// $(responsiveSlider).hover(
+//   function () {
+//     $(this).stop();
+//   },
+//   function () {
+//     nextSlide();
+//   }
+// );
