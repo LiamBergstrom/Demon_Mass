@@ -43,7 +43,6 @@ var responsiveSlider = function () {
       slideList.style.left = "0px";
       count = 1;
     }
-    console.log(sliderWidth);
   };
 
   next.addEventListener("click", function () {
@@ -54,20 +53,28 @@ var responsiveSlider = function () {
     prevSlide();
   });
 
-  setInterval(function () {
+  let interval = setInterval(function () {
     nextSlide();
-  }, 7000);
+  }, 3000);
+
+  onclearInterval(interval);
 };
 
+// document.getElementById("slider").onmouseover = function () {
+//   mouseOver();
+// };
+// function mouseOver() {
+//   console.log("hello");
+// }
+//
 window.onload = function () {
   responsiveSlider();
 };
 
-// $(responsiveSlider).hover(
-//   function () {
-//     $(this).stop();
-//   },
-//   function () {
-//     nextSlide();
-//   }
-// );
+// var stopAnimation = function () {
+//   $(this).stop();
+// };
+
+// addEventListener("hover", function () {
+//   stopAnimation();
+// });

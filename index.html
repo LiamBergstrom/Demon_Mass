@@ -6,15 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
-
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-    <link rel="manifest" href="/site.webmanifest" />
-
+  </head>
+  <body>
     <header id="navbar">
       <nav class="navbar-container container">
-        <a href="/" class="home-link">
+        <a href="index.html" class="home-link">
           <div class="navbar-logo"></div>
           DemonMass
         </a>
@@ -54,61 +50,106 @@
         </div>
       </nav>
     </header>
-  </head>
-  <body>
-    <container>
-      <div class="headers">
-        <div class="header1">
-          <h1>Mens</h1>
+
+    <div class="titles">
+      <a href="#"><img src="images/main_man1.jpg" /></a>
+      <a href="#"><img src="images/seamless-gym-wear.jpg" /></a>
+    </div>
+
+    <section>
+      <div id="slider">
+        <h2 class="collection_header">Collections</h2>
+        <ul id="slideWrap">
+          <li>
+            <a href="#"
+              ><img src="images/collection1.jpg" alt="" class="items" />
+            </a>
+          </li>
+          <li>
+            <a href="#"
+              ><img src="images/collection2.jpeg" alt="" class="items"
+            /></a>
+          </li>
+          <li>
+            <a href="#"
+              ><img src="images/collection3.webp" alt="" class="items"
+            /></a>
+          </li>
+          <li>
+            <a href="#"
+              ><img src="images/collection4.jpg" alt="" class="items" />
+            </a>
+          </li>
+          <li>
+            <a href="#"
+              ><img src="images/collection5.jpg" alt="" class="items" />
+            </a>
+          </li>
+        </ul>
+        <a id="prev">&#8810;</a>
+        <a id="next">&#8811;</a>
+      </div>
+    </section>
+
+    <div>
+      <div class="text">New Release!</div>
+      <img src="images/new_release.webp" alt="" class="new_release" />
+    </div>
+
+    <h2>MASS<h2> 
+    <div class="mass">
+    
+      <div class="product">
+        <a class="image" href="#"></a>
+        <div class="name">
+          <p>
+            <a href="#">PROTEIN</a>
+          </p>
+          <img src="images/mass1.png" />
         </div>
-        <div class="header2">
-          <h1>Womens</h1>
+        <div class="price">
+          <button>$10.00</button>
         </div>
       </div>
-
-      <section>
-        <div id="slider">
-          <h1>Collections</h1>
-          <ul id="slideWrap">
-            <li>
-              <a href="#"
-                ><img src="images/collection1.jpg" alt="" class="items" />
-              </a>
-            </li>
-            <li>
-              <a href="#"
-                ><img src="images/collection2.jpeg" alt="" class="items"
-              /></a>
-            </li>
-            <li>
-              <a href="#"
-                ><img src="images/collection3.webp" alt="" class="items"
-              /></a>
-            </li>
-            <li>
-              <a href="#"
-                ><img src="images/collection4.jpg" alt="" class="items" />
-              </a>
-            </li>
-            <li>
-              <a href="#"
-                ><img src="images/collection5.jpg" alt="" class="items" />
-              </a>
-            </li>
-          </ul>
-          <a id="prev">&#8810;</a>
-          <a id="next">&#8811;</a>
+      <div class="product">
+        <a class="image" href="#"></a>
+        <div class="name">
+          <p>
+            <a href="#">GAINER</a>
+          </p>
+          <img src="images/mass2.png" />
         </div>
-      </section>
-      <div>
-        <div class="text">New Release!</div>
-        <img src="images/new_release.webp" class="new_release" />
+        <div class="price">
+          <button>$10.00</button>
+        </div>
       </div>
-    </container>
-
+      <div class="product">
+        <a class="image" href="#"></a>
+        <div class="name">
+          <p>
+            <a href="#">PWO</a>
+          </p>
+          <img src="images/mass3.png" />
+        </div>
+        <div class="price">
+          <button>$10.00</button>
+        </div>
+      </div>
+      <div class="product">
+        <a class="image" href="#"></a>
+        <div class="name">
+          <p>
+            <a href="#">CREATINE</a>
+          </p>
+          <img src="images/mass4.png" />
+        </div>
+        <div class="price">
+          <button>$10.00</button>
+        </div>
+      </div>
+    </div>
     <footer></footer>
-
-    <script type="text/javascript" src="js/index.js"></script>
-    <script type="text/javascript" src="js/cookies.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/cookies.js"></script>
   </body>
 </html>
