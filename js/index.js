@@ -57,24 +57,21 @@ var responsiveSlider = function () {
     nextSlide();
   }, 3000);
 
-  onclearInterval(interval);
+  const allSlides = document.getElementsByClassName("slide");
+
+  for (var i = 0; i < allSlides.length; i++) {
+    allSlides[i].addEventListener("mouseover", function () {
+      clearInterval(interval);
+    });
+
+    allSlides[i].addEventListener("mouseout", function () {
+      interval = setInterval(function () {
+        nextSlide();
+      }, 3000);
+    });
+  }
 };
 
-// document.getElementById("slider").onmouseover = function () {
-//   mouseOver();
-// };
-// function mouseOver() {
-//   console.log("hello");
-// }
-//
 window.onload = function () {
   responsiveSlider();
 };
-
-// var stopAnimation = function () {
-//   $(this).stop();
-// };
-
-// addEventListener("hover", function () {
-//   stopAnimation();
-// });
