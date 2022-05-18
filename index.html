@@ -45,8 +45,9 @@
             <li class="navbar-item shopping">
               <a class="navbar-link" href="/shopping">
                 <img src="images/favicon-32x32.png" alt="Favicon" />
-                <span class ="cart-quantity"> 0</span>
+                <span id="number">0</span>
               </a>
+              
             </li>
           </ul>
         </div>
@@ -70,37 +71,37 @@
         <ul id="slideWrap">
           <li class="slide" id="oneSlide">
             <a href="#"
-              ><img src="images/collection1.jpg" alt="" class="items" />
+              ><img src="images/collection1.jpg" alt="Sittandes kvinna" class="items" />
             </a>
           </li>
           <li class="slide">
             <a href="#"
-              ><img src="images/collection2.jpeg" alt="" class="items"
+              ><img src="images/collection2.jpeg" alt="Grabb som gör marklyft" class="items"
             /></a>
           </li>
           <li class="slide">
             <a href="#"
-              ><img src="images/collection3.webp" alt="" class="items"
+              ><img src="images/collection3.webp" alt="En kvinna som gör en core övning" class="items"
             /></a>
           </li>
           <li class="slide">
             <a href="#"
-              ><img src="images/collection4.jpg" alt="" class="items" />
+              ><img src="images/collection4.jpg" alt="En grabb som gör shoulder raises" class="items" />
             </a>
           </li>
           <li class="slide">
             <a href="#"
-              ><img src="images/collection5.jpg" alt="" class="items" />
+              ><img src="images/collection5.jpg" alt="David Laid" class="items" />
             </a>
           </li>
           <li class="slide">
             <a href="#"
-              ><img src="images/collection1.jpg" alt="" class="items" />
+              ><img src="images/collection1.jpg" alt="Sittandes kvinna" class="items" />
             </a>
           </li>
           <li class="slide">
             <a href="#"
-              ><img src="images/collection2.jpeg" alt="" class="items"
+              ><img src="images/collection2.jpeg" alt="Grabb som gör marklyft" class="items"
             /></a>
           </li>
 
@@ -113,7 +114,7 @@
 
     <div class="new_release">
       <div class="text">New Release!</div>
-      <img src="images/new_release.webp" alt="" class="image_release" />
+      <img src="images/new_release.webp" alt="multiple pictures of clothing" class="image_release" />
     </div>
 
     <h2 class="mass_text">MASS<h2> 
@@ -125,10 +126,11 @@
           <p>
             <a href="#">PROTEIN</a>
           </p>
-          <img src="images/mass1.png" />
+          <img src="images/mass1.png" alt="Protein product"/>
         </div>
         <div class="price">
-          <button class="cart-button" data-product-sku="Gold Protein">
+         
+          <button class="cart-button" onclick="numberClick()" data-product-sku="Gold Protein">
             <span class="add-to-cart">Add to cart</span>
             <span class="added">Added</span>
             
@@ -141,10 +143,10 @@
           <p>
             <a href="#">GAINER</a>
           </p>
-          <img src="images/mass2.png" />
+          <img src="images/mass2.png" alt="Gainer product"/>
         </div>
         <div class="price">
-          <button class="cart-button" data-product-sku="Gainer">
+          <button class="cart-button" onclick="numberClick()" data-product-sku="Gainer">
             <span class="add-to-cart">Add to cart</span>
             <span class="added">Added</span>
             
@@ -156,10 +158,10 @@
           <p>
             <a href="#">PWO</a>
           </p>
-          <img src="images/mass3.png" />
+          <img src="images/mass3.png" alt="PWO product"/>
         </div>
         <div class="price">
-          <button class="cart-button" data-product-sku="PWO">
+          <button class="cart-button" onclick="numberClick()" data-product-sku="PWO">
             <span class="add-to-cart">Add to cart</span>
             <span class="added">Added</span>
             
@@ -172,10 +174,10 @@
           <p>
             <a href="#">CREATINE</a>
           </p>
-          <img src="images/mass4.png" />
+          <img src="images/mass4.png" alt="Creatine product"/>
         </div>
         <div class="price">
-          <button class="cart-button" data-product-sku="Creatine">
+          <button class="cart-button"  onclick="numberClick()" data-product-sku="Creatine">
             <span class="add-to-cart">Add to cart</span>
             <span class="added">Added</span>
             

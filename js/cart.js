@@ -24,3 +24,10 @@ function cartClick() {
   let button = this;
   button.classList.add("clicked");
 }
+
+var click = 0;
+
+function numberClick() {
+  click += 1;
+  document.getElementById("number").innerHTML = click;
+}
