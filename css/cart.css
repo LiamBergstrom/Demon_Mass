@@ -11,6 +11,12 @@
   color: #fff;
   transition: 0.3s ease-in-out;
   overflow: hidden;
+  left: 7%;
+}
+@media screen and (max-width: 700px) {
+  .cart-button {
+    left: 0%;
+  }
 }
 .cart-button:hover {
   background-color: #000000;
